@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CBT, ERP and EMDR Therapy Online | [YOUR NAME]</title>
+<meta name="description" content="BABCP accredited CBT psychotherapist and EMDR Europe accredited consultant offering online therapy for anxiety, OCD, trauma, depression and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0F4C4A;
+  --ink:#14302F;
+  --body:#2B4846;
+  --muted:#3E5957;
+  --accent:#B5532D;
+  --bg:#F3F6F5;
+  --white:#FFFFFF;
+  --serif:'Newsreader',Georgia,serif;
+  --sans:'Albert Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--ink);background:var(--bg)}
+a{color:var(--teal)}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.eyebrow{margin:0 0 12px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--accent)}
+h1,h2{font-family:var(--serif);font-weight:400;color:var(--teal);margin:0}
+h2{font-size:44px;line-height:1.15}
+p{margin:0}
+
+/* Buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:17px;padding:16px 30px;border-radius:999px;background:var(--accent);color:#fff}
+.btn:hover{background:#9A4423;color:#fff}
+.btn-outline{background:transparent;color:var(--teal);border:2px solid var(--teal);padding:14px 28px}
+.btn-outline:hover{background:var(--teal);color:#fff}
+
+/* Header */
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:24px;padding-bottom:24px}
+.brand{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--teal);text-decoration:none}
+.brand small{display:block;font-family:var(--sans);font-size:13px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:10px 0}
+nav a:hover{color:var(--accent)}
+nav a.btn{color:#fff;padding:12px 22px;font-size:16px}
+
+/* Hero */
+.hero{display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding-top:72px;padding-bottom:88px}
+.hero-text{flex:999 1 460px;min-width:0}
+.hero h1{font-size:60px;line-height:1.08;letter-spacing:-.01em;margin-bottom:24px}
+.hero .lead{font-size:20px;max-width:580px;color:var(--body);margin-bottom:36px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.stats{flex:1 1 320px;min-width:0;background:var(--teal);color:var(--bg);border-radius:28px;padding:40px 36px;display:flex;flex-direction:column;gap:28px}
+.stat strong{display:block;font-family:var(--serif);font-weight:400;font-size:52px;line-height:1}
+.stat span{display:block;margin-top:6px;color:#CFE3E0}
+.stats hr{border:0;height:1px;background:#3C7471;margin:0;width:100%}
+
+/* Therapies */
+.therapies{background:var(--white);padding:88px 0}
+.therapies .intro{max-width:640px;color:var(--body);margin:16px 0 48px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:var(--bg);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:12px}
+.card .num{font-family:var(--serif);font-size:34px;line-height:1;color:var(--accent)}
+.card h3{margin:0;font-size:21px;font-weight:600;color:var(--teal)}
+.card p{color:var(--body)}
+
+/* About */
+.about{display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start;padding-top:96px;padding-bottom:96px}
+.about-side{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.photo{width:100%;max-width:380px;aspect-ratio:4/5;background:#D6E5E2;border-radius:28px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--muted);font-size:15px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.creds{font-size:15px;color:var(--body);display:flex;flex-direction:column;gap:8px}
+.creds strong{color:var(--teal)}
+.about-text{flex:999 1 480px;min-width:0}
+.about-text h2{margin-bottom:24px}
+.about-text p{color:var(--body);margin-bottom:20px}
+.about-text p:last-child{margin-bottom:0}
+
+/* Help */
+.help{background:var(--teal);color:var(--bg);padding:88px 0}
+.help .eyebrow{color:#F2B79C}
+.help h2{color:#fff;margin-bottom:40px}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.tags li{border:1.5px solid #6FA39F;border-radius:999px;padding:12px 22px}
+
+/* Online */
+.online{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:96px;padding-bottom:96px}
+.online-text{flex:1 1 420px;min-width:0}
+.online-text h2{margin-bottom:20px}
+.online-text p{color:var(--body)}
+.details{flex:1 1 360px;min-width:0;background:var(--white);border-radius:24px;padding:36px 32px;display:flex;flex-direction:column;gap:14px;color:var(--body)}
+.details strong{font-size:19px;color:var(--teal)}
+
+/* Contact */
+.contact{background:var(--white);padding:88px 0;text-align:center}
+.contact .wrap{max-width:760px}
+.contact h2{margin-bottom:16px}
+.contact .lead{color:var(--body);margin-bottom:32px}
+.contact .actions{justify-content:center;margin-bottom:28px}
+.contact .note{font-size:15px;color:var(--muted)}
+
+/* Footer */
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;padding-top:36px;padding-bottom:36px;font-size:14px;color:var(--muted)}
+
+/* Phones */
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .hero{padding-top:40px;padding-bottom:56px;gap:40px}
+  .hero h1{font-size:40px}
+  .hero .lead{font-size:18px}
+  h2{font-size:34px}
+  .therapies,.help,.contact{padding:64px 0}
+  .about,.online{padding-top:64px;padding-bottom:64px;gap:40px}
+  .stat strong{font-size:44px}
+  nav{gap:4px 20px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">[YOUR NAME]<small>Cognitive Behavioural Psychotherapist</small></a>
+    <nav aria-label="Main">
+      <a href="#therapies">Therapies</a>
+      <a href="#about">About</a>
+      <a href="#help">What I help with</a>
+      <a href="#online">Online therapy</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="wrap hero">
+    <div class="hero-text">
+      <p class="eyebrow">BABCP accredited · EMDR Europe accredited consultant</p>
+      <h1>Evidence-based therapy for anxiety, trauma and OCD, from wherever you are.</h1>
+      <p class="lead">Individually tailored cognitive behavioural therapy, CBT with ERP and EMDR, delivered by an experienced psychotherapist and registered mental health nurse, entirely online.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Book an initial conversation</a>
+        <a class="btn btn-outline" href="#therapies">Explore the therapies</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>14 years</strong><span>as a CBT psychotherapist, in the NHS and private practice</span></div>
+      <hr>
+      <div class="stat"><strong>20+ years</strong><span>working in mental health as a registered mental health nurse</span></div>
+      <hr>
+      <div class="stat"><strong>12 years</strong><span>practising EMDR, as an accredited EMDR consultant</span></div>
+    </div>
+  </section>
+
+  <section class="therapies" id="therapies">
+    <div class="wrap">
+      <p class="eyebrow">Specialisms</p>
+      <h2>Therapies I offer</h2>
+      <p class="intro">Every approach below is used flexibly and shaped around you and what you are dealing with, rather than applied as a one-size-fits-all programme.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="num" aria-hidden="true">01</div>
+          <h3>CBT with Exposure and Response Prevention</h3>
+          <p>A specialist form of CBT for obsessive compulsive disorder, helping you face obsessions and break the cycle of compulsions.</p>
+        </article>
+        <article class="card">
+          <div class="num" aria-hidden="true">02</div>
+          <h3>Cognitive Behavioural Therapy</h3>
+          <p>A practical, structured approach that explores how thoughts, feelings and behaviours connect, and builds skills for change.</p>
+        </article>
+        <article class="card">
+          <div class="num" aria-hidden="true">03</div>
+          <h3>EMDR</h3>
+          <p>Eye Movement Desensitisation and Reprocessing, a trauma therapy that helps the brain process distressing memories.</p>
+        </article>
+        <article class="card">
+          <div class="num" aria-hidden="true">04</div>
+          <h3>Trauma-focused CBT</h3>
+          <p>CBT adapted for the effects of trauma, working at a pace that feels manageable to make sense of what happened.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap about" id="about">
+    <div class="about-side">
+      <!-- Replace the text below with: <img src="your-photo.jpg" alt="[YOUR NAME]"> -->
+      <div class="photo">[YOUR PHOTO]</div>
+      <div class="creds">
+        <strong>Accreditations</strong>
+        <span>BABCP accredited Cognitive Behavioural Psychotherapist</span>
+        <span>EMDR Europe accredited EMDR Consultant</span>
+        <span>Registered Mental Health Nurse</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="eyebrow">About me</p>
+      <h2>Clinical experience you can rely on</h2>
+      <p>I am a BABCP accredited Cognitive Behavioural Psychotherapist with 14 years of experience, working both in the NHS and in my own small private practice. Before and alongside that, I have spent over 20 years in mental health as a registered mental health nurse.</p>
+      <p>I provide individually tailored therapy for a wide range of difficulties, including depression, work-related and personal stress, anxiety (worry, panic, social anxiety), obsessive compulsive disorder, trauma and substance misuse.</p>
+      <p>I am also an accredited EMDR consultant, accredited by EMDR Europe, with 12 years of experience in this therapy.</p>
+    </div>
+  </section>
+
+  <section class="help" id="help">
+    <div class="wrap">
+      <p class="eyebrow">Areas of interest</p>
+      <h2>What I can help with</h2>
+      <ul class="tags">
+        <li>Post-traumatic stress disorder</li>
+        <li>Obsessive compulsive disorder</li>
+        <li>Stress management</li>
+        <li>Worry</li>
+        <li>Panic attacks</li>
+        <li>Phobias</li>
+        <li>Social phobia</li>
+        <li>Depression</li>
+        <li>Substance misuse</li>
+        <li>Self-esteem and confidence</li>
+        <li>Work-related stress</li>
+        <li>EMDR</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap online" id="online">
+    <div class="online-text">
+      <p class="eyebrow">How I work</p>
+      <h2>Therapy online, through Microsoft Teams</h2>
+      <p>I work remotely and do not provide face-to-face clinics. Sessions take place over Microsoft Teams, so you can have therapy from a private space that suits you, without travel.</p>
+    </div>
+    <div class="details">
+      <strong>Practical details</strong>
+      <span>Session length and frequency: [SESSION DETAILS]</span>
+      <span>Fees: [YOUR FEES]</span>
+      <span>Availability: [YOUR AVAILABILITY]</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Take the first step</h2>
+      <p class="lead">Get in touch to ask a question or arrange an initial conversation about whether therapy with me is right for you.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:your@email.com">Email me</a>
+        <a class="btn btn-outline" href="tel:+440000000000">Call me</a>
+      </div>
+      <p class="note">If you are in crisis or need urgent help, please contact your GP, call NHS 111, or call 999 in an emergency.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>[YOUR NAME] · BABCP accredited CBT psychotherapist · EMDR Europe accredited consultant</div>
+    <div>Online therapy via Microsoft Teams · BABCP no. [YOUR NUMBER]</div>
+  </div>
+</footer>
+
+</body>
+</html>
